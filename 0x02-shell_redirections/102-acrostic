@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c1 | tr -d '\n'; echo
+sed -n 's/^\(.\).*/\1/p' | tr -d '\n';echo
