@@ -1,2 +1,2 @@
 #!/bin/bash
-while read line; do echo "$line"; read skip; done
+sed -n 'p;n' $1
