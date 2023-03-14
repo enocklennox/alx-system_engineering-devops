@@ -1,2 +1,2 @@
-dirs=$(echo "$PATH" | tr ':' '\n')
-echo "$dirs" | wc -l
+#!/bin/bash
+IFS=: read -ra dirs <<< "$PATH"; echo "${#dirs[@]}"
