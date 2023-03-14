@@ -1,3 +1,2 @@
-#1/bin/bash
 dirs=$(echo "$PATH" | tr ':' '\n')
 echo "$dirs" | wc -l
